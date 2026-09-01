@@ -1,0 +1,105 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    color: #29241d;
+    background-color: #e8dfcf;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.cabecalho {
+    padding: 20px 8%;
+    color: #e8dfcf;
+    background-color: #111d19;
+    text-align: center;
+}
+
+.nome-site {
+    margin: 0 0 15px;
+    color: #c79b50;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 8px;
+    color: #e8dfcf;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav a:hover, .card a:hover { color: #c79b50; }
+
+.banner {
+    padding: 110px 20px;
+    color: #f5ecdc;
+    background-color: #263b32;
+    background-image: linear-gradient(rgba(17, 29, 25, .55), rgba(17, 29, 25, .75));
+    text-align: center;
+}
+
+.banner h1 { margin: 10px 0; font-size: 52px; }
+.banner p { margin: 10px auto 25px; max-width: 600px; }
+.subtitulo, .futuro, .ano { color: #c79b50; }
+
+.botao, form button {
+    display: inline-block;
+    padding: 10px 22px;
+    color: #191c17;
+    background-color: #c79b50;
+    border: 1px solid #c79b50;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.secao { padding: 60px 8%; }
+.escura { color: #e8dfcf; background-color: #182822; }
+.secao h2 { margin-top: 0; color: #9b7031; font-size: 34px; text-align: center; }
+.escura h2 { color: #d0a75f; }
+.introducao { margin: -10px auto 30px; text-align: center; }
+
+.grade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item, .card, .lista-filmes article, .curiosidade {
+    padding: 20px;
+    background-color: #f2eadc;
+    border: 1px solid #b9a98f;
+}
+
+.item { width: 230px; }
+.item h3, .card h3, .lista-filmes h3, .curiosidade h3 { margin-top: 0; color: #765224; }
+.item p { font-size: 15px; }
+.futuro { font-size: 13px !important; }
+
+.card { width: 230px; color: #29241d; }
+.card img { width: 100%; height: 150px; object-fit: cover; border: 1px solid #b9a98f; }
+.card a { color: #765224; font-weight: bold; }
+
+.lista-filmes { max-width: 850px; margin: auto; }
+.lista-filmes article { margin: 15px 0; }
+.lista-filmes article p { margin: 0; }
+.personagens .item { width: 180px; }
+
+.curiosidade { max-width: 700px; margin: 15px auto; }
+.login { text-align: center; }
+form { max-width: 420px; margin: auto; text-align: left; }
+form label { display: block; margin-top: 15px; }
+form input { width: 100%; padding: 10px; border: 1px solid #a8987d; background-color: #f8f2e8; }
+form button { margin-top: 20px; cursor: pointer; }
+.observacao { font-size: 14px; }
+
+footer { padding: 25px 8%; color: #e8dfcf; background-color: #111d19; text-align: center; font-size: 14px; }
+
+@media (max-width: 650px) {
+    .banner h1 { font-size: 36px; }
+    nav a { display: inline-block; margin: 4px 6px; }
+    .secao { padding: 40px 5%; }
+}

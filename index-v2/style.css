@@ -1,0 +1,331 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    color: #29241d;
+    background-color: #e8dfcf;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.cabecalho {
+    padding: 20px 8%;
+    color: #e8dfcf;
+    background-color: #111d19;
+    text-align: center;
+}
+
+.nome-site {
+    margin: 0 0 15px;
+    color: #c79b50;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 8px;
+    color: #e8dfcf;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav a:hover, .card a:hover { color: #c79b50; }
+
+.banner {
+    padding: 110px 20px;
+    color: #f5ecdc;
+    background-color: #263b32;
+    background-image: linear-gradient(rgba(17, 29, 25, .55), rgba(17, 29, 25, .75));
+    text-align: center;
+}
+
+.banner h1 { margin: 10px 0; font-size: 52px; }
+.banner p { margin: 10px auto 25px; max-width: 600px; }
+.subtitulo, .futuro, .ano { color: #c79b50; }
+
+.botao, form button {
+    display: inline-block;
+    padding: 10px 22px;
+    color: #191c17;
+    background-color: #c79b50;
+    border: 1px solid #c79b50;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.secao { padding: 60px 8%; }
+.escura { color: #e8dfcf; background-color: #182822; }
+.secao h2 { margin-top: 0; color: #9b7031; font-size: 34px; text-align: center; }
+.escura h2 { color: #d0a75f; }
+.introducao { margin: -10px auto 30px; text-align: center; }
+
+.grade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item, .card, .lista-filmes article, .curiosidade {
+    padding: 20px;
+    background-color: #f2eadc;
+    border: 1px solid #b9a98f;
+}
+
+.item { width: 230px; }
+.item h3, .card h3, .lista-filmes h3, .curiosidade h3 { margin-top: 0; color: #765224; }
+.item p { font-size: 15px; }
+.futuro { font-size: 13px !important; }
+
+.card { width: 230px; color: #29241d; }
+.card img { width: 100%; height: 150px; object-fit: cover; border: 1px solid #b9a98f; }
+.card a { color: #765224; font-weight: bold; }
+
+.lista-filmes { max-width: 850px; margin: auto; }
+.lista-filmes article { margin: 15px 0; }
+.lista-filmes article p { margin: 0; }
+.personagens .item { width: 180px; }
+
+.curiosidade { max-width: 700px; margin: 15px auto; }
+.login { text-align: center; }
+form { max-width: 420px; margin: auto; text-align: left; }
+form label { display: block; margin-top: 15px; }
+form input { width: 100%; padding: 10px; border: 1px solid #a8987d; background-color: #f8f2e8; }
+form button { margin-top: 20px; cursor: pointer; }
+.observacao { font-size: 14px; }
+
+/* ESTILOS PARA O COMPÊNDIO DE PERSONAGENS */
+.categoria-personagens {
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #264d38;
+}
+
+.titulo-categoria {
+    color: #d0a75f;
+    font-size: 28px;
+    text-align: center;
+    margin: 30px 0 10px 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.descricao-categoria {
+    color: #b8a28e;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.grade-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card-personagem {
+    width: 240px;
+    padding: 20px;
+    background-color: #f2eadc;
+    border: 1px solid #b9a98f;
+    border-radius: 4px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #29241d;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-personagem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imagem-personagem {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 15px;
+    border: 1px solid #b9a98f;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #e8dfcf;
+}
+
+.imagem-personagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-personagem h4 {
+    margin: 0 0 8px 0;
+    color: #765224;
+    font-size: 18px;
+}
+
+.card-personagem .categoria {
+    font-size: 13px;
+    color: #9b7031;
+    margin: 0 0 8px 0;
+    font-weight: bold;
+}
+
+.card-personagem .descricao {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #29241d;
+    margin: 8px 0;
+    flex-grow: 1;
+}
+
+.card-personagem .era {
+    font-size: 12px;
+    color: #c79b50;
+    margin: 10px 0 12px 0;
+    font-weight: bold;
+}
+
+.link-personagem {
+    font-size: 13px;
+    color: #765224;
+    text-decoration: none;
+    font-weight: bold;
+    border-top: 1px solid #d4c5b3;
+    padding-top: 12px;
+    transition: color 0.2s;
+}
+
+.link-personagem:hover {
+    color: #c79b50;
+}
+
+/* FIM ESTILOS PARA O COMPÊNDIO DE PERSONAGENS */
+
+/* ESTILOS PARA A BIBLIOTECA CRONOLÓGICA DE LIVROS */
+.era-livros {
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.titulo-era {
+    color: #d0a75f;
+    font-size: 26px;
+    text-align: center;
+    margin: 40px 0 15px 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #c79b50;
+    padding-bottom: 15px;
+}
+
+.descricao-era {
+    color: #b8a28e;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.card-livro {
+    width: 260px;
+    padding: 20px;
+    background-color: #f2eadc;
+    border: 1px solid #b9a98f;
+    border-radius: 4px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #29241d;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-livro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-livro img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid #b9a98f;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+.card-livro h4 {
+    margin: 0 0 8px 0;
+    color: #765224;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-livro .era-livro {
+    font-size: 12px;
+    color: #9b7031;
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.card-livro .ano-publicacao {
+    font-size: 12px;
+    color: #c79b50;
+    margin: 0 0 10px 0;
+    font-style: italic;
+}
+
+.card-livro .descricao-livro {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #29241d;
+    margin: 0 0 10px 0;
+    flex-grow: 1;
+}
+
+.card-livro .importancia {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #765224;
+    margin: 10px 0 12px 0;
+    padding: 10px;
+    background-color: #f9f4eb;
+    border-left: 3px solid #c79b50;
+    border-radius: 2px;
+}
+
+.personagens-livro {
+    margin: 12px 0;
+    padding: 8px;
+    background-color: #f9f4eb;
+    border-radius: 2px;
+    font-size: 11px;
+    color: #9b7031;
+    min-height: 20px;
+}
+
+.link-livro {
+    font-size: 13px;
+    color: #765224;
+    text-decoration: none;
+    font-weight: bold;
+    border-top: 1px solid #d4c5b3;
+    padding-top: 12px;
+    transition: color 0.2s;
+}
+
+.link-livro:hover {
+    color: #c79b50;
+}
+
+/* FIM ESTILOS PARA A BIBLIOTECA CRONOLÓGICA DE LIVROS */
+
+footer { padding: 25px 8%; color: #e8dfcf; background-color: #111d19; text-align: center; font-size: 14px; }
+
+@media (max-width: 650px) {
+    .banner h1 { font-size: 36px; }
+    nav a { display: inline-block; margin: 4px 6px; }
+    .secao { padding: 40px 5%; }
+}

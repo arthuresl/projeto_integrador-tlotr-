@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fëanor - Crônicas da Terra-média</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .personagem-detalhes {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f2eadc;
+            padding: 40px;
+            border-radius: 4px;
+        }
+        
+        .personagem-detalhes h1 {
+            color: #765224;
+            font-size: 36px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #c79b50;
+            padding-bottom: 10px;
+        }
+        
+        .nomes-alternativos {
+            color: #9b7031;
+            font-size: 14px;
+            font-style: italic;
+            margin: 10px 0;
+        }
+        
+        .categoria-personagem {
+            color: #765224;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        
+        .personagem-detalhes img {
+            width: 100%;
+            max-width: 400px;
+            border: 2px solid #b9a98f;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .info-personagem, .historia, .feitos, .relacoes, .curiosidades, .obras {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f9f4eb;
+            border-left: 4px solid #c79b50;
+            border-radius: 2px;
+        }
+        
+        .info-personagem h2, .historia h2, .feitos h2, .relacoes h2, .curiosidades h2, .obras h2 {
+            color: #765224;
+            margin-top: 0;
+            border-bottom: 1px solid #c79b50;
+            padding-bottom: 10px;
+        }
+        
+        dl {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 10px;
+            line-height: 1.8;
+        }
+        
+        dt {
+            font-weight: bold;
+            color: #765224;
+        }
+        
+        dd {
+            margin: 0;
+        }
+        
+        ul {
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+        
+        ul li {
+            margin: 8px 0;
+        }
+        
+        .botao {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #c79b50;
+            color: #191c17;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        .botao:hover {
+            background-color: #b88a3a;
+        }
+        
+        .navegacao-personagens {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+            gap: 20px;
+        }
+        
+        .navegacao-personagens a {
+            flex: 1;
+            padding: 15px;
+            background-color: #e8dfcf;
+            border: 1px solid #b9a98f;
+            text-align: center;
+            text-decoration: none;
+            color: #765224;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        .navegacao-personagens a:hover {
+            background-color: #f2eadc;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <p class="nome-site">Crônicas da Terra-média</p>
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="../index.html#cronologia">Cronologia</a>
+            <a href="../index.html#livros">Livros</a>
+            <a href="../index.html#filmes">Filmes</a>
+            <a href="../index.html#personagens">Personagens</a>
+            <a href="../index.html#login">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="secao escura">
+            <div class="personagem-detalhes">
+                <h1>Fëanor</h1>
+                <p class="nomes-alternativos">Também conhecido como: Fëanaro (seu nome em Quenya)</p>
+                <p class="categoria-personagem">Elfo · Noldor · Primeira Era</p>
+
+                <img src="../imagens/feanor.jpg" alt="Fëanor - Mestre Artesão">
+
+                <!-- Informações Básicas -->
+                <section class="info-personagem">
+                    <h2>Informações Básicas</h2>
+                    <dl>
+                        <dt>Raça:</dt>
+                        <dd>Elfo (Noldor)</dd>
+                        
+                        <dt>Origem:</dt>
+                        <dd>Valinor, Terra Abençoada</dd>
+                        
+                        <dt>Era de Importância:</dt>
+                        <dd>Primeira Era (e Idades de Árvores)</dd>
+                        
+                        <dt>Pais:</dt>
+                        <dd><a href="finwe.html">Finwë</a> (pai), Miriel (mãe)</dd>
+                        
+                        <dt>Cônjuge:</dt>
+                        <dd><a href="nerdanel.html">Nerdanel</a></dd>
+                        
+                        <dt>Filhos:</dt>
+                        <dd>
+                            <a href="maedhros.html">Maedhros</a>,
+                            <a href="maeglin.html">Maeglin</a>,
+                            <a href="celegorm.html">Celegorm</a>,
+                            <a href="caranthir.html">Caranthir</a>,
+                            <a href="curufin.html">Curufin</a>,
+                            <a href="amrod.html">Amrod</a>,
+                            <a href="amras.html">Amras</a>
+                        </dd>
+                        
+                        <dt>Morte:</dt>
+                        <dd>Primeira Era, durante a rebelião contra os Valar</dd>
+                    </dl>
+                </section>
+
+                <!-- História -->
+                <section class="historia">
+                    <h2>História</h2>
+                    <p>
+                        Fëanor foi o maior artesão que jamais existiu entre os Elfos. Nasceu em Valinor, era filho de Finwë, 
+                        rei dos Noldor, e possuía dons excepcionais nas artes da criação e da forja. Seu maior feito foi a criação 
+                        dos Silmarils, três jóias brilhantes que captavam a luz das Árvores de Valinor.
+                    </p>
+                    <p>
+                        Quando Melkor (depois conhecido como Morgoth) roubou os Silmarils e destruiu as Árvores de Valinor, 
+                        Fëanor ficou consumido pela fúria e jurou uma terrível maldição: nunca descansaria até recuperar as jóias. 
+                        Este juramento, conhecido como o Juramento de Fëanor, tornou-se a fonte de grande sofrimento para os Elfos.
+                    </p>
+                    <p>
+                        Liderando a rebelião dos Noldor contra os Valar, Fëanor abandonou Valinor e navegou para a Terra-média 
+                        em busca de Morgoth. Morreu na Primeira Era, em combate contra os Orcs de Morgoth, mas não antes de deixar 
+                        um legado que definiria os acontecimentos da Primeira Era.
+                    </p>
+                </section>
+
+                <!-- Feitos Notáveis -->
+                <section class="feitos">
+                    <h2>Feitos e Ações Notáveis</h2>
+                    <ul>
+                        <li>Criação dos <strong>Silmarils</strong>, as três jóias mais belas e poderosas do mundo</li>
+                        <li>Invenção do processo de forja que permitiu criar as jóias</li>
+                        <li>Liderança dos Noldor na rebelião contra os Valar</li>
+                        <li>O Juramento de Fëanor, maldição que causou a perdição de muitos</li>
+                        <li>Morte valorosa em combate contra Morgoth</li>
+                        <li>Criação de uma das mais importantes artes élficas: a joalharia</li>
+                    </ul>
+                </section>
+
+                <!-- Relações com Outros Personagens -->
+                <section class="relacoes">
+                    <h2>Relações com Outros Personagens</h2>
+                    <ul>
+                        <li><a href="finwe.html">Finwë</a> - Seu pai, rei dos Noldor</li>
+                        <li><a href="maedhros.html">Maedhros</a> - Seu filho, que seguiu seu juramento</li>
+                        <li><a href="morgoth.html">Morgoth</a> - Seu inimigo jurado, rival pelo destino</li>
+                        <li><a href="yavanna.html">Yavanna</a> - Vala que criou as Árvores cuja luz capturou</li>
+                        <li><a href="manwe.html">Manwë</a> - Vala que condena seu juramento</li>
+                        <li><a href="nerdanel.html">Nerdanel</a> - Sua esposa de grande beleza</li>
+                    </ul>
+                </section>
+
+                <!-- Curiosidades -->
+                <section class="curiosidades">
+                    <h2>Curiosidades</h2>
+                    <ul>
+                        <li>Fëanor foi o único Elfo que criou verdadeiramente do nada, sem imitar os Valar</li>
+                        <li>Os Silmarils foram criados com uma parte da própria vida de Fëanor</li>
+                        <li>Seu nome significa "Espírito de Fogo" em Sindarin</li>
+                        <li>O Juramento de Fëanor é considerado uma das maldições mais poderosas do legendário</li>
+                        <li>Seus sete filhos carregaram o peso de seu juramento por toda a Primeira Era</li>
+                        <li>Fëanor foi o primeiro a se rebelar contra os Valar e abandonar Valinor</li>
+                    </ul>
+                </section>
+
+                <!-- Aparições em Obras -->
+                <section class="obras">
+                    <h2>Aparições em Obras de Tolkien</h2>
+                    <ul>
+                        <li><strong>O Silmarillion</strong> - Protagonista principal da primeira parte</li>
+                        <li><strong>Beren e Lúthien</strong> - Mencionado no contexto histórico</li>
+                        <li><strong>Os Filhos de Húrin</strong> - Contexto histórico dos eventos</li>
+                        <li><strong>História da Terra-média</strong> - Detalhes adicionais sobre sua vida</li>
+                        <li><strong>Contos Inacabados</strong> - Histórias adicionais</li>
+                    </ul>
+                </section>
+
+                <!-- Navegação -->
+                <div class="navegacao-personagens">
+                    <a href="fingolfin.html">← Anterior: Fingolfin</a>
+                    <a href="../index.html#personagens">Voltar ao Compêndio</a>
+                    <a href="maedhros.html">Próximo: Maedhros →</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Crônicas da Terra-média. Um projeto acadêmico e de fã dedicado ao universo de J.R.R. Tolkien.</p>
+    </footer>
+</body>
+</html>

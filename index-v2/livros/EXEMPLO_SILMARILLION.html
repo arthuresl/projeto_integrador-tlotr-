@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Silmarillion - Crônicas da Terra-média</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .livro-detalhes {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f2eadc;
+            padding: 40px;
+            border-radius: 4px;
+        }
+        
+        .livro-detalhes h1 {
+            color: #765224;
+            font-size: 36px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #c79b50;
+            padding-bottom: 10px;
+        }
+        
+        .info-basica {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .info-basica img {
+            width: 100%;
+            border: 2px solid #b9a98f;
+            border-radius: 4px;
+        }
+        
+        .info-livro {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .info-livro dl {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 10px;
+            line-height: 1.8;
+        }
+        
+        .info-livro dt {
+            font-weight: bold;
+            color: #765224;
+        }
+        
+        .info-livro dd {
+            margin: 0;
+        }
+        
+        .secao-livro {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f9f4eb;
+            border-left: 4px solid #c79b50;
+            border-radius: 2px;
+        }
+        
+        .secao-livro h2 {
+            color: #765224;
+            margin-top: 0;
+            border-bottom: 1px solid #c79b50;
+            padding-bottom: 10px;
+        }
+        
+        .era-livro-grande {
+            font-size: 16px;
+            color: #9b7031;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .ano-publicacao-grande {
+            font-size: 14px;
+            color: #c79b50;
+            font-style: italic;
+            margin: 5px 0;
+        }
+        
+        .personagens-lista {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+        
+        .personagens-lista li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e8dfcf;
+        }
+        
+        .personagens-lista li:last-child {
+            border-bottom: none;
+        }
+        
+        .personagens-lista a {
+            color: #765224;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .personagens-lista a:hover {
+            color: #c79b50;
+        }
+        
+        .navegacao-livros {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .navegacao-livros a {
+            flex: 1;
+            padding: 15px;
+            background-color: #e8dfcf;
+            border: 1px solid #b9a98f;
+            text-align: center;
+            text-decoration: none;
+            color: #765224;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        .navegacao-livros a:hover {
+            background-color: #f2eadc;
+        }
+        
+        .botao {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #c79b50;
+            color: #191c17;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        
+        .botao:hover {
+            background-color: #b88a3a;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <p class="nome-site">Crônicas da Terra-média</p>
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="../index.html#cronologia">Cronologia</a>
+            <a href="../index.html#livros">Livros</a>
+            <a href="../index.html#filmes">Filmes</a>
+            <a href="../index.html#personagens">Personagens</a>
+            <a href="../index.html#login">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="secao escura">
+            <div class="livro-detalhes">
+                <h1>O Silmarillion</h1>
+                <p class="era-livro-grande">Primórdios · Primeira Era</p>
+                <p class="ano-publicacao-grande">Publicado em 1977 (de forma póstuma, editado por Christopher Tolkien)</p>
+
+                <!-- Informações Básicas -->
+                <div class="info-basica">
+                    <img src="../imagens/silmarillion.jpg" alt="Capa de O Silmarillion">
+                    
+                    <div class="info-livro">
+                        <dl>
+                            <dt>Período/Era:</dt>
+                            <dd>Primórdios · Primeira Era</dd>
+                            
+                            <dt>Ano de Publicação:</dt>
+                            <dd>1977 (editado por Christopher Tolkien)</dd>
+                            
+                            <dt>Autor:</dt>
+                            <dd>J.R.R. Tolkien</dd>
+                            
+                            <dt>Tipo:</dt>
+                            <dd>Narrativa Épica · Compilação</dd>
+                            
+                            <dt>Importância:</dt>
+                            <dd>Fundamental para o legendário</dd>
+                            
+                            <dt>Recomendado Ler:</dt>
+                            <dd>Após O Hobbit ou antes de LOTR</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- Descrição -->
+                <section class="secao-livro">
+                    <h2>Sobre o Livro</h2>
+                    <p>
+                        O Silmarillion é a obra fundamental do legendário de Tolkien. Narra a criação de Arda pelos Valar, a Música dos Ainur 
+                        que precede a própria existência do mundo, a origem dos Elfos, e os grandes eventos das Eras Antigas.
+                    </p>
+                    <p>
+                        A obra é dividida em várias seções: a Ainur, descrevendo a criação; as histórias dos Silmarils e de Fëanor; a narrativa de 
+                        Beren e Lúthien; a saga de Túrin; a queda de Gondolin; e cronologias de reis élficos. Cada uma dessas narrativas é épica em 
+                        seu próprio direito, abordando temas de heroísmo, sacrifício, amor e tragédia.
+                    </p>
+                    <p>
+                        Publicado de forma póstuma em 1977, O Silmarillion foi organizado por Christopher Tolkien a partir de manuscritos e notas 
+                        deixadas por seu pai durante décadas. É essencial para compreender toda a mitologia de Arda e fornece o contexto necessário 
+                        para as outras obras.
+                    </p>
+                </section>
+
+                <!-- Conteúdo Principal -->
+                <section class="secao-livro">
+                    <h2>Principais Seções</h2>
+                    <ul class="personagens-lista">
+                        <li><strong>Ainulindalë:</strong> A Música dos Ainur e criação de Arda pelos Valar</li>
+                        <li><strong>Valaquenta:</strong> Descrição dos Valar e Maiar</li>
+                        <li><strong>Quenta Silmarillion:</strong> As histórias dos Silmarils e Fëanor</li>
+                        <li><strong>Beren e Lúthien:</strong> A história de amor e heroísmo entre Homem e Elfa</li>
+                        <li><strong>Túrin Turambar:</strong> A trágica saga de Túrin e sua maldição</li>
+                        <li><strong>Queda de Gondolin:</strong> A destruição da grande cidade élfica</li>
+                        <li><strong>Apêndices:</strong> Genealogias e cronologias</li>
+                    </ul>
+                </section>
+
+                <!-- Personagens Principais -->
+                <section class="secao-livro">
+                    <h2>Personagens Principais</h2>
+                    <ul class="personagens-lista">
+                        <li><a href="../personagens/manwe.html">Manwë</a> · Rei dos Valar</li>
+                        <li><a href="../personagens/varda.html">Varda</a> · Criadora das Estrelas</li>
+                        <li><a href="../personagens/feanor.html">Fëanor</a> · Mestre Artesão</li>
+                        <li><a href="../personagens/morgoth.html">Morgoth</a> · Senhor Escuro</li>
+                        <li><a href="../personagens/luthien.html">Lúthien</a> · A Mais Bela</li>
+                        <li><a href="../personagens/beren.html">Beren</a> · Herói Humano</li>
+                        <li><a href="../personagens/turin.html">Túrin Turambar</a> · Guerreiro Trágico</li>
+                        <li><a href="../personagens/thingol.html">Thingol</a> · Rei de Doriath</li>
+                    </ul>
+                </section>
+
+                <!-- Importância no Legendário -->
+                <section class="secao-livro">
+                    <h2>Importância no Legendário</h2>
+                    <p>
+                        O Silmarillion é absolutamente essencial para compreender o universo de Tolkien. Sem esta obra, é impossível entender:
+                    </p>
+                    <ul>
+                        <li>Por que Morgoth é tão importante para toda a história</li>
+                        <li>A origem dos Elfos e suas diferentes raças</li>
+                        <li>Por que os Anéis de Poder foram criados</li>
+                        <li>A ascensão de Sauron ao poder</li>
+                        <li>O impacto das Eras Antigas no presente da Terceira Era</li>
+                        <li>A genealogia dos reis de Gondor e Arnor</li>
+                    </ul>
+                    <p>
+                        Muitos dos eventos de O Senhor dos Anéis são ecos de eventos narrados n'O Silmarillion. Compreender o Silmarillion 
+                        enriquece tremendamente a experiência de leitura de LOTR.
+                    </p>
+                </section>
+
+                <!-- Contexto Histórico -->
+                <section class="secao-livro">
+                    <h2>Contexto Histórico de Arda</h2>
+                    <p>
+                        O Silmarillion cobre um período de tempo vastíssimo. Começa antes mesmo da criação do mundo (a Música dos Ainur) e se 
+                        estende até o final da Primeira Era, quando os últimos Valar se retiram de suas interferências ativas na Terra-média.
+                    </p>
+                    <p>
+                        Durante este período imensamente longo, toda a civilização élfica é formada, prospera, sofre, e é transformada. Os 
+                        Homens aparecem pela primeira vez. Três Silmarils são criados e perdidos. Cidades magníficas são construídas e 
+                        destruídas. Dois Portadores de Anel nascem.
+                    </p>
+                    <p>
+                        O fim do Silmarillion marca efetivamente o fim da interferência dos Valar no mundo. A partir de então, o destino de 
+                        Arda repousa completamente nas mãos dos Elfos, Homens, e outras criaturas, preparando o palco para os eventos de 
+                        O Senhor dos Anéis.
+                    </p>
+                </section>
+
+                <!-- Relação com Outras Obras -->
+                <section class="secao-livro">
+                    <h2>Relação com Outras Obras</h2>
+                    <p><strong>Precursor de:</strong></p>
+                    <ul class="personagens-lista">
+                        <li><a href="beren-luthien.html">Beren e Lúthien</a> (versão expandida de parte do Silmarillion)</li>
+                        <li><a href="filhos-hurin.html">Os Filhos de Húrin</a> (versão expandida de parte do Silmarillion)</li>
+                        <li><a href="queda-gondolin.html">A Queda de Gondolin</a> (versão expandida de parte do Silmarillion)</li>
+                    </ul>
+                    <p><strong>Referenciado em:</strong></p>
+                    <ul class="personagens-lista">
+                        <li><a href="queda-numenor.html">A Queda de Númenor</a> (herança da Primeira Era)</li>
+                        <li><a href="hobbit.html">O Hobbit</a> (menções a Morgoth e eventos antigos)</li>
+                        <li><a href="sociedade-anel.html">O Senhor dos Anéis</a> (contexto de toda a série)</li>
+                    </ul>
+                </section>
+
+                <!-- Navegação -->
+                <div class="navegacao-livros">
+                    <a href="#">← Nenhum livro anterior</a>
+                    <a href="../index.html#livros">Voltar à Biblioteca</a>
+                    <a href="beren-luthien.html">Próximo: Beren e Lúthien →</a>
+                </div>
+
+                <a href="../index.html#livros" class="botao">Voltar à Biblioteca de Livros</a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Crônicas da Terra-média. Um projeto acadêmico e de fã dedicado ao universo de J.R.R. Tolkien.</p>
+    </footer>
+</body>
+</html>
